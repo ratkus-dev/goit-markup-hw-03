@@ -157,11 +157,28 @@ input:focus {
   border: none;
   border-radius: 4px;
   transition: background-color 0.4s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
 }
 
 .btn:hover {
   background-color: var(--ocean);
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-title {
@@ -333,6 +350,10 @@ nav {
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .team-item-content {
