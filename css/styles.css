@@ -173,6 +173,10 @@ input:focus {
   color: var(--navy-blue);
 }
 
+.header {
+  border-bottom: 1px solid var(--cornflower);
+}
+
 .header-content,
 .header-contacts {
   display: flex;
@@ -219,7 +223,7 @@ input:focus {
   font-family: var(--font-main), sans-serif;
   letter-spacing: 0.02em;
   font-weight: 500;
-  padding: 24px 0;
+  padding: 24px 0 23px;
   color: var(--navy-blue);
 }
 
@@ -282,7 +286,7 @@ input:focus {
   margin: 0 auto 48px;
 }
 
-.features {
+.section {
   padding: 120px 0;
 }
 
@@ -313,7 +317,6 @@ input:focus {
 
 .team {
   background: var(--cloud);
-  padding: 120px 0;
 }
 
 .team-list {
@@ -351,10 +354,6 @@ input:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--slate);
-}
-
-.portfolio {
-  padding: 120px 0;
 }
 
 .portfolio-list {
